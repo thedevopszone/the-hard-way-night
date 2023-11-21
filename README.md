@@ -76,6 +76,14 @@ CONFIG_FILE=inventory/mycluster/hosts.yaml python3 contrib/inventory_builder/inv
 ansible-playbook -i inventory/mycluster/hosts.yaml  --become --user=root cluster.yml
 ```
 
+```
+mkdir ~/.kube
+scp root@<NODE1-IP>:/etc/kubernetes/admin.conf .
+mv admin.conf config
+
+# edit IP in config from 127.0.0.1 to IP from Node1
+```
+
 
 ## Install the Monitoring Host
 
