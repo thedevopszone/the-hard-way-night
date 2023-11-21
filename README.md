@@ -110,6 +110,10 @@ networks:
     name: gitlab-network
 ---
 
+# In the browser
+<IP-DEVOPS-HOST>:8080
+
+
 ```
 
 
