@@ -77,3 +77,22 @@ ansible-playbook -i inventory/mycluster/hosts.yaml  --become --user=root cluster
 ```
 
 
+## Install the Monitoring Host
+
+Install docker
+```
+curl -fsSL get.docker.com -o get-docker.sh && sh get-docker.sh
+```
+
+Install docker-compose
+```
+mkdir -p ~/.docker/cli-plugins/
+curl -SL https://github.com/docker/compose/releases/download/v2.18.1/docker-compose-linux-x86_64 -o ~/.docker/cli-plugins/docker-compose
+
+chmod +x ~/.docker/cli-plugins/docker-compose
+cp ~/.docker/cli-plugins/docker-compose /usr/bin/
+docker-compose --version
+```
+
+
+
