@@ -116,7 +116,8 @@ networks:
 # Username: root
 
 # Get the password
-docker exec -it gitlab-ce grep 'Password:'
+docker exec -it gitlab-ce bash
+cat /etc/gitlab/initial_root_password
 ```
 
 
