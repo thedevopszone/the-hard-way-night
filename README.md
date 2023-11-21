@@ -69,6 +69,7 @@ source venv/bin/activate
 
 pip3 install -r requirements.txt
 
+cp -rfp inventory/sample inventory/mycluster
 
 declare -a IPS=(172.16.0.153 172.16.0.167 172.16.0.213)
 CONFIG_FILE=inventory/mycluster/hosts.yaml python3 contrib/inventory_builder/inventory.py ${IPS[@]}
