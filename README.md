@@ -95,4 +95,14 @@ docker-compose --version
 ```
 
 
+Install Loki with docker-compose
+```
+wget https://raw.githubusercontent.com/grafana/loki/v2.9.1/production/docker-compose.yaml -O docker-compose.yaml
+docker-compose up -d
+
+# In the browser
+<IP-MONITORINGHOST>:3000
+```
+
+
 
