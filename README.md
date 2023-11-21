@@ -113,6 +113,8 @@ networks:
 # In the browser
 <IP-DEVOPS-HOST>:8080
 
+# Username: root
+
 # Get the password
 docker exec -it gitlab-ce grep 'Password:'
 ```
